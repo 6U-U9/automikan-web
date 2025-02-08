@@ -81,8 +81,8 @@ const onSubscriptionDelete = async (subscription: Subscription) => {
 
         <template #cell(aggregate)="{ rowData }">
             <div class="ellipsis max-w-[50px]">
-                <VaIcon v-if="rowData.aggregate" name="close" color="danger" size="20px" />
-                <VaIcon v-else name="check" color="success" size="20px" />
+                <VaIcon v-if="rowData.aggregate" name="check" color="success" size="20px" />
+                <VaIcon v-else name="close" color="danger" size="20px" />
             </div>
         </template>
 
