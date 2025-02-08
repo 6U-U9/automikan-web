@@ -1,4 +1,4 @@
-export type SubscriptionSource = 'Mikan' | 'Unknown'
+export type SubscriptionSource = 'mikan' | 'unknown'
 
 export type Subscription = {
     id: number

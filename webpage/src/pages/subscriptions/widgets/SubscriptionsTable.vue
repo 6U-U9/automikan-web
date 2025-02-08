@@ -37,8 +37,8 @@ const sortByVModel = useVModel(props, 'sortBy', emit)
 const sortingOrderVModel = useVModel(props, 'sortingOrder', emit)
 
 const sourceColors: Record<SubscriptionSource, string> = {
-    Unknown: 'background-element',
-    Mikan: 'warning',
+    unknown: 'background-element',
+    mikan: 'warning',
 }
 
 const totalPages = computed(() => Math.ceil(props.pagination.total / props.pagination.perPage))

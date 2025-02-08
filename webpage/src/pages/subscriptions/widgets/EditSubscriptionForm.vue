@@ -16,7 +16,7 @@ const props = defineProps({
 })
 
 const defaultNewSubscription: Omit<Subscription, 'id'> = {
-    source: 'Mikan',
+    source: 'mikan',
     aggregate: true,
     url: '',
     description: '',
@@ -61,9 +61,9 @@ const onSave = () => {
     }
 }
 
-const sourceSelectOptions: { text: Capitalize<Lowercase<SubscriptionSource>>; value: SubscriptionSource }[] = [
-    { text: 'Mikan', value: 'Mikan' },
-    { text: 'Unknown', value: 'Unknown' },
+const sourceSelectOptions: { text: Lowercase<SubscriptionSource>; value: SubscriptionSource }[] = [
+    { text: 'mikan', value: 'mikan' },
+    { text: 'unknown', value: 'unknown' },
 ]
 </script>
 
